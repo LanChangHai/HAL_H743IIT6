@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/HAL_H743IIT6.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "/home/dong/tools/openocd/share/openocd/scripts/interface/cmsis-dap.cfg",
+                "/home/dong/tools/openocd/share/openocd/scripts/target/stm32h7x.cfg"
+            ],
+            "armToolchainPath": "/opt/gcc-arm-none-eabi-10.3-2021.10/bin",
+            "svdFile": "STM32H743.svd",
+            "preLaunchTask": "Build"
+        }
+    ]
+}
